@@ -3,8 +3,7 @@ C++ library designed to handle superpixels information, using OpenCV.
 
 
 Authors:
-	Yoshua Nava
-	Rafael Colmenares
+	Yoshua Navaa and Rafael Colmenares
 
 ## Instructions to compile and run the code:
 

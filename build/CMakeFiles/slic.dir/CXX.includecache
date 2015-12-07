@@ -1,0 +1,52 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/libsuperpixel/superpixel.h
+iostream
+-
+stdio.h
+-
+math.h
+-
+vector
+-
+opencv/cv.h
+../include/libsuperpixel/opencv/cv.h
+opencv/highgui.h
+../include/libsuperpixel/opencv/highgui.h
+opencv/cxcore.h
+../include/libsuperpixel/opencv/cxcore.h
+opencv2/highgui/highgui.hpp
+../include/libsuperpixel/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+../include/libsuperpixel/opencv2/imgproc/imgproc.hpp
+opencv2/video/tracking.hpp
+../include/libsuperpixel/opencv2/video/tracking.hpp
+opencv2/core/core.hpp
+../include/libsuperpixel/opencv2/core/core.hpp
+
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/slic_modified/slic.cpp
+slic.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/slic_modified/slic.h
+
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/slic_modified/slic.h
+opencv/cv.h
+-
+opencv/highgui.h
+-
+stdio.h
+-
+math.h
+-
+vector
+-
+float.h
+-
+libsuperpixel/superpixel.h
+-
+

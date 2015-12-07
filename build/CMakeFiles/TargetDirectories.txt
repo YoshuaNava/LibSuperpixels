@@ -1,0 +1,6 @@
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/build/CMakeFiles/fh_egbis.dir
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/build/CMakeFiles/libsuperpixel.dir
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/build/CMakeFiles/slic.dir
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/build/CMakeFiles/test_egbis_superpixel_segmentation.dir
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/build/CMakeFiles/test_histogram_superpixel_comparison.dir
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/build/CMakeFiles/test_slic_superpixel_segmentation.dir

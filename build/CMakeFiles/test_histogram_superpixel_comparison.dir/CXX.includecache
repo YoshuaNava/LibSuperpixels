@@ -1,0 +1,248 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/egbis/convolve.h
+vector
+-
+algorithm
+-
+cmath
+-
+image.h
+../include/egbis/image.h
+
+../include/egbis/disjoint-set.h
+
+../include/egbis/egbis.h
+convolve.h
+../include/egbis/convolve.h
+disjoint-set.h
+../include/egbis/disjoint-set.h
+filter.h
+../include/egbis/filter.h
+image.h
+../include/egbis/image.h
+imconv.h
+../include/egbis/imconv.h
+imutil.h
+../include/egbis/imutil.h
+misc.h
+../include/egbis/misc.h
+pnmfile.h
+../include/egbis/pnmfile.h
+segment-graph.h
+../include/egbis/segment-graph.h
+segment-image.h
+../include/egbis/segment-image.h
+libsuperpixel/superpixel.h
+-
+
+../include/egbis/filter.h
+vector
+-
+cmath
+-
+image.h
+../include/egbis/image.h
+misc.h
+../include/egbis/misc.h
+convolve.h
+../include/egbis/convolve.h
+imconv.h
+../include/egbis/imconv.h
+
+../include/egbis/image.h
+cstring
+-
+
+../include/egbis/imconv.h
+climits
+-
+image.h
+../include/egbis/image.h
+imutil.h
+../include/egbis/imutil.h
+misc.h
+../include/egbis/misc.h
+
+../include/egbis/imutil.h
+image.h
+../include/egbis/image.h
+misc.h
+../include/egbis/misc.h
+
+../include/egbis/misc.h
+cmath
+-
+
+../include/egbis/pnmfile.h
+cstdlib
+-
+climits
+-
+cstring
+-
+fstream
+-
+image.h
+../include/egbis/image.h
+misc.h
+../include/egbis/misc.h
+
+../include/egbis/segment-graph.h
+algorithm
+-
+cmath
+-
+disjoint-set.h
+../include/egbis/disjoint-set.h
+
+../include/egbis/segment-image.h
+cstdlib
+-
+image.h
+../include/egbis/image.h
+misc.h
+../include/egbis/misc.h
+filter.h
+../include/egbis/filter.h
+segment-graph.h
+../include/egbis/segment-graph.h
+iostream
+-
+algorithm
+-
+math.h
+-
+opencv/cv.h
+../include/egbis/opencv/cv.h
+opencv/highgui.h
+../include/egbis/opencv/highgui.h
+opencv/cxcore.h
+../include/egbis/opencv/cxcore.h
+opencv2/highgui/highgui.hpp
+../include/egbis/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+../include/egbis/opencv2/imgproc/imgproc.hpp
+opencv2/video/tracking.hpp
+../include/egbis/opencv2/video/tracking.hpp
+opencv2/core/core.hpp
+../include/egbis/opencv2/core/core.hpp
+
+../include/libsuperpixel/superpixel.h
+iostream
+-
+stdio.h
+-
+math.h
+-
+vector
+-
+opencv/cv.h
+../include/libsuperpixel/opencv/cv.h
+opencv/highgui.h
+../include/libsuperpixel/opencv/highgui.h
+opencv/cxcore.h
+../include/libsuperpixel/opencv/cxcore.h
+opencv2/highgui/highgui.hpp
+../include/libsuperpixel/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+../include/libsuperpixel/opencv2/imgproc/imgproc.hpp
+opencv2/video/tracking.hpp
+../include/libsuperpixel/opencv2/video/tracking.hpp
+opencv2/core/core.hpp
+../include/libsuperpixel/opencv2/core/core.hpp
+
+../include/slic_modified/slic.h
+opencv/cv.h
+-
+opencv/highgui.h
+-
+stdio.h
+-
+math.h
+-
+vector
+-
+float.h
+-
+libsuperpixel/superpixel.h
+-
+
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/global.h
+iostream
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/iostream
+stdio.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/stdio.h
+algorithm
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/algorithm
+stdlib.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/stdlib.h
+time.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/time.h
+math.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/math.h
+string.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/string.h
+iomanip
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/iomanip
+fstream
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/fstream
+vector
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/vector
+deque
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/deque
+algorithm
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/algorithm
+thread
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/thread
+float.h
+-
+opencv/cv.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/opencv/cv.h
+opencv/highgui.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/opencv/highgui.h
+opencv/cxcore.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/opencv/cxcore.h
+opencv2/highgui/highgui.hpp
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/opencv2/imgproc/imgproc.hpp
+opencv2/video/tracking.hpp
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/opencv2/video/tracking.hpp
+opencv2/core/core.hpp
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/opencv2/core/core.hpp
+slic_modified/slic.h
+-
+egbis/convolve.h
+-
+egbis/disjoint-set.h
+-
+egbis/filter.h
+-
+egbis/image.h
+-
+egbis/imconv.h
+-
+egbis/imutil.h
+-
+egbis/misc.h
+-
+egbis/pnmfile.h
+-
+egbis/segment-graph.h
+-
+egbis/segment-image.h
+-
+egbis/egbis.h
+-
+
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/test/test_histogram_superpixel_comparison.cpp
+../include/global.h
+/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/include/global.h
+

@@ -61,4 +61,6 @@ To the authors of the EGBIS algorithm and its OpenCV wrapper (Felzenswalb, Hutte
 
 Develop an abstract class to encapsulate superpixel segmentations algorithm with it. (in development)
 
+Make everything compliant with the ROS C++ Style Guide ( http://wiki.ros.org/CppStyleGuide )
+
 Improve the performance of the SLIC algorithm, using intrinsics and Intel TBB.

@@ -12,24 +12,24 @@ Authors:
 
 2. Type the following commands to compile everything:
 
-```mkdir build
+```
+mkdir build
 cd build
 cmake ..
-make```
+make
+```
 
 3. To run the EGBIS superpixel segmentation test, type:
 
-./test_egbis_superpixel_segmentation
-
+```./test_egbis_superpixel_segmentation ```
 
 4. To run the EGBIS superpixel segmentation test, type:
 
-./test_slic_superpixel_segmentation
-
+```./test_slic_superpixel_segmentation ```
 
 5. To run the superpixel histogram comparison test, type:
 
-./test_histogram_superpixel_comparison
+```./test_histogram_superpixel_comparison ```
 
 
 If you want to change the algorithm that is used for generating and comparing superpixels, change the value of the constant SUPERPIXEL_ALGORITHM (line 18) for either "EGBIS" or "SLIC"

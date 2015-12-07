@@ -34,6 +34,10 @@ make
 If you want to change the algorithm that is used for generating and comparing superpixels, change the value of the constant SUPERPIXEL_ALGORITHM (line 18) for either "EGBIS" or "SLIC"
 
 
+## Dependencies:
+OpenCV 2.4+, cmake 2.8+, gcc, g++, and make.
+
+
 
 ## Contributions:
 
@@ -42,7 +46,6 @@ A library for handling superpixels called "libsuperpixel", that can be found in 
 A wrapper for the egbis algorithm, which can be found in include/egbis, and is mainly concentrated in the files egbis.cpp and egbis.h.
 
 A modification of the default SLIC library files, so that they can be compliant with libsuperpixel.
-
 
 
 

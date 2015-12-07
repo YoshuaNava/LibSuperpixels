@@ -12,10 +12,10 @@ Authors:
 
 2. Type the following commands to compile everything:
 
-mkdir build
+```mkdir build
 cd build
 cmake ..
-make
+make```
 
 3. To run the EGBIS superpixel segmentation test, type:
 

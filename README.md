@@ -8,9 +8,9 @@ Authors:
 
 ## Instructions to compile and run the code:
 
-1. Open a terminal and to the the repository root directory ("slic_egbis_segmentation/").
+**1)** Open a terminal and to the the repository root directory ("slic_egbis_segmentation/").
 
-2. Type the following commands to compile everything:
+**2)** Type the following commands to compile everything:
 
 ```
 mkdir build
@@ -19,15 +19,15 @@ cmake ..
 make
 ```
 
-3. To run the EGBIS superpixel segmentation test, type:
+**3)** To run the EGBIS superpixel segmentation test, type:
 
 ```./test_egbis_superpixel_segmentation ```
 
-4. To run the EGBIS superpixel segmentation test, type:
+**4)** To run the EGBIS superpixel segmentation test, type:
 
 ```./test_slic_superpixel_segmentation ```
 
-5. To run the superpixel histogram comparison test, type:
+**5)** To run the superpixel histogram comparison test, type:
 
 ```./test_histogram_superpixel_comparison ```
 
@@ -56,3 +56,10 @@ To Michael Sapienza, author of the dataset that is provided by default with this
 To the authors of the SLIC algorithm and its OpenCV wrapper (Achanta, Shaji, et al. And GitHub user PSMM).
 
 To the authors of the EGBIS algorithm and its OpenCV wrapper (Felzenswalb, Huttenlocher, and Michael Sapienza).
+
+
+## TODO:
+
+Develop an abstract class to encapsulate superpixel segmentations algorithm with it. (in development)
+
+Improve the performance of the SLIC algorithm, using intrinsics and Intel TBB.

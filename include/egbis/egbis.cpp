@@ -33,7 +33,7 @@ void Egbis::clear_data() {
 	superpixels_centers.clear();
 	superpixels_list.clear();
 	superpixels_adjacency_matrix.clear();
-	superpixels_Gsimilarity_matrix.clear();
+	superpixels_similarity_matrix.clear();
 }
 
 
@@ -243,7 +243,7 @@ cv::Mat Egbis::generateSuperpixels(cv::Mat image, cv::Mat gray_image)
 	superpixels_centers.clear();
 	superpixels_list.clear();
 	superpixels_adjacency_matrix.clear();
-	superpixels_Gsimilarity_matrix.clear();
+	superpixels_similarity_matrix.clear();
 
 
 

@@ -20,8 +20,8 @@ using namespace cv;
 double proc_W, proc_H;
 VideoCapture cap;
 
-cv::Mat frame, seg_image, gray, contours_image; // Mat Declarations
-
+cv::Mat frame, seg_image, gray, superpixels_contours_img; // Mat Declarations
+Egbis egbis;
 
 
 void showImages()
@@ -32,12 +32,19 @@ void showImages()
 	cv::resizeWindow("gray", proc_W, proc_H);
 	DISPLAY_IMAGE_XY(true, seg_image, 2, 0);
 	cv::resizeWindow("seg_image", proc_W, proc_H);
-	DISPLAY_IMAGE_XY(true, contours_image, 3, 0);
-	cv::resizeWindow("contours_image", proc_W, proc_H);
+	DISPLAY_IMAGE_XY(true, superpixels_contours_img, 3, 0);
+	cv::resizeWindow("superpixels_contours_img", proc_W, proc_H);
 }
 
 
-
+void egbisSuperpixels()
+{
+	seg_image = egbis.generateSuperpixels(frame, gray);
+    superpixels_contours_img = egbis.outlineSuperpixelsContours(cv::Scalar(255,0,0));
+    egbis.calculateSuperpixelCenters();
+    egbis.storeSuperpixelsMemory();
+    superpixels_contours_img = egbis.displayCenterGrid(superpixels_contours_img, cv::Scalar(0,255,0));
+}
 
 
 
@@ -92,12 +99,7 @@ int main( int argc, char** argv )
 		cvtColor(frame, gray, CV_BGR2GRAY);
 		waitKey(1); // Wait Time
 
-        Egbis egbis;
-		seg_image = egbis.generateSuperpixels(frame, gray);
-        contours_image = egbis.outlineSuperpixelsContours(cv::Scalar(255,0,0));
-        egbis.calculateSuperpixelCenters();
-        egbis.storeSuperpixelsMemory();
-        contours_image = egbis.displayCenterGrid(contours_image, cv::Scalar(0,255,0));
+		egbisSuperpixels();
 		CV_TIMER_STOP(B, "Superpixels processed")
 
 		showImages();

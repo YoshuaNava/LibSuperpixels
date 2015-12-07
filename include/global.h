@@ -27,17 +27,6 @@
 
 #include <slic_modified/slic.h>
 
-
-#include <egbis/convolve.h>
-#include <egbis/disjoint-set.h>
-#include <egbis/filter.h>
-#include <egbis/image.h>
-#include <egbis/imconv.h>
-#include <egbis/imutil.h>
-#include <egbis/misc.h>
-#include <egbis/pnmfile.h>
-#include <egbis/segment-graph.h>
-#include <egbis/segment-image.h>
 #include <egbis/egbis.h>
 
 //#include "gps_sapienza_ros/disjoint-set.h"

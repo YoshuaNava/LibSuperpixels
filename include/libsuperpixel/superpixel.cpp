@@ -65,11 +65,6 @@ void Superpixel::add_point(cv::Point point)
 
 void Superpixel::calculate_histogram()
 {
-
-	// /// Separate the image in 3 places ( B, G and R )
-	// vector<cv::Mat> bgr_planes;
-	// split(this->pixels, bgr_planes);
-
 	/// Establish the number of bins
 	int histSize = 256;
 	int hist_w = this->pixels.cols;

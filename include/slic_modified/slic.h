@@ -49,7 +49,7 @@ class Slic {
         
         vector<Superpixel> superpixels;
         vector<vector<int>> superpixels_adjacency_matrix;
-        vector<vector<int>> superpixels_Gsimilarity_matrix;
+        vector<vector<int>> superpixels_similarity_matrix;
 
         /* The step size per cluster, and the colour (nc) and distance (ns)
          * parameters. */

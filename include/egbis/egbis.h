@@ -10,16 +10,16 @@
  */
 
 
-#include "convolve.h"
-#include "disjoint-set.h"
-#include "filter.h"
-#include "image.h"
-#include "imconv.h"
-#include "imutil.h"
-#include "misc.h"
-#include "pnmfile.h"
-#include "segment-graph.h"
-#include "segment-image.h"
+#include <egbis/convolve.h>
+#include <egbis/disjoint-set.h>
+#include <egbis/filter.h>
+#include <egbis/image.h>
+#include <egbis/imconv.h>
+#include <egbis/imutil.h>
+#include <egbis/misc.h>
+#include <egbis/pnmfile.h>
+#include <egbis/segment-graph.h>
+#include <egbis/segment-image.h>
 #include <libsuperpixel/superpixel.h>
 
 
@@ -36,7 +36,7 @@
 		vector<cv::Point> superpixels_centers;
 		vector<Superpixel> superpixels_list;
 		vector<vector<int>> superpixels_adjacency_matrix;
-		vector<vector<int>> superpixels_Gsimilarity_matrix;
+		vector<vector<int>> superpixels_similarity_matrix;
 		cv::Mat frame, seg_image, gray, contours_image;
 
 	public:

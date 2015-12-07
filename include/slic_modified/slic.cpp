@@ -385,6 +385,10 @@ void Slic::colour_with_cluster_means(IplImage *image) {
 
 void Slic::store_superpixels(IplImage *image)
 {
+    superpixels.clear();
+    superpixels_adjacency_matrix.clear();
+    superpixels_similarity_matrix.clear();
+
     int i, x, y, k;
     int index = 0;
     cv::Point temp_point;

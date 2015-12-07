@@ -2,6 +2,10 @@
 C++ library designed to handle superpixels information, using OpenCV.
 
 
+Authors:
+	Yoshua Nava
+	Rafael Colmenares
+
 ## Instructions to compile and run the code:
 
 1. Open a terminal and to the the repository root directory ("slic_egbis_segmentation/").

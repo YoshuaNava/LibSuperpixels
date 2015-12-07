@@ -4,26 +4,26 @@ C++ library designed to handle superpixels information, using OpenCV.
 
 ## Instructions to compile and run the code:
 
-1) Open a terminal and to the the repository root directory ("slic_egbis_segmentation/").
+1. Open a terminal and to the the repository root directory ("slic_egbis_segmentation/").
 
-2) Type the following commands to compile everything:
+2. Type the following commands to compile everything:
 
 mkdir build
 cd build
 cmake ..
 make
 
-3) To run the EGBIS superpixel segmentation test, type:
+3. To run the EGBIS superpixel segmentation test, type:
 
 ./test_egbis_superpixel_segmentation
 
 
-4) To run the EGBIS superpixel segmentation test, type:
+4. To run the EGBIS superpixel segmentation test, type:
 
 ./test_slic_superpixel_segmentation
 
 
-5) To run the superpixel histogram comparison test, type:
+5. To run the superpixel histogram comparison test, type:
 
 ./test_histogram_superpixel_comparison
 

@@ -50,13 +50,9 @@ cv::Mat Egbis::displayCenterGrid(cv::Mat image, CvScalar colour)
 cv::Mat Egbis::displayNumberGrid(cv::Mat image, CvScalar colour)
 {
     for (int i = 0; i < (int) superpixels_list.size(); i++) {
-        //cvCircle(image, cvPoint(superpixels[i][0], superpixels[i][0]), 2, colour, 2);
         char buffer[25];
         sprintf(buffer, "%i", i);
-        //CvFont font;
-        //cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 0.3, 0.3);
         cv::putText(image, buffer, cvPoint(superpixels_centers[i].x, superpixels_centers[i].y), CV_FONT_HERSHEY_SIMPLEX, 0.3, colour, 1, CV_AA);
-        //cout << "Superpixel # " << i << ".  Number of points = " << superpixels[i].get_points().size() << ".    Histogram length = " << superpixels[i].get_histogram().size() << "\n";
     }
 
     return image;
@@ -143,7 +139,6 @@ vector<Superpixel> Egbis::storeSuperpixelsMemory()
         superpixels_list[i].add_pixels_information(frame, clusters);
         superpixels_list[i].calculate_histogram();
     }
-    //superpixels_list[0].print_everything();
 
     return superpixels_list;
 }
@@ -279,6 +274,7 @@ cv::Mat Egbis::generateSuperpixels(cv::Mat image, cv::Mat gray_image)
 		clusters.push_back(seg_row);
 	}
 	num_superpixels = num_superpixels + 1;
+    cout << " num of superpixels    " << num_superpixels << "\n";
 
 	for(i=0; i<num_superpixels ;i++)
 	{
@@ -288,4 +284,11 @@ cv::Mat Egbis::generateSuperpixels(cv::Mat image, cv::Mat gray_image)
 
 
 	return seg_image;
+}
+
+
+
+vector<Superpixel> Egbis::get_superpixels()
+{
+    return this->superpixels_list;
 }

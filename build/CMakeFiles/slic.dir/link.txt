@@ -1,1 +1,0 @@
-/usr/lib/ccache/c++  -fPIC  -std=c++11 -mmmx -msse -msse -msse2 -msse3 -mssse3 -O3 -DNDEBUG   -shared -Wl,-soname,libslic.so -o libslic.so CMakeFiles/slic.dir/include/slic_modified/slic.cpp.o liblibsuperpixel.so -Wl,-rpath,"/home/alfredoso/GitHub/OtrasCosas/Trabajos/Nomoko Camera/CodeSamples-YoshuaNava/C++/slic_egbis_segmentation/build" 

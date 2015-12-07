@@ -1,5 +1,5 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.3)
-PROJECT(LibSuperpixels)
+PROJECT(slic_egbis_segmentation)
 
 
 SET(CMAKE_BUILD_TYPE Release) # Release, RelWithDebInfo

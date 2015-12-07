@@ -15,6 +15,7 @@
 #define Window_W 1.02*proc_W //appriximate wht window width and hight as a function of the frame size
 #define Window_H 1.3*(proc_H)+20
 #define DISPLAY_IMAGE_XY(R,img,X,Y)		if(R){cvNamedWindow(#img); cvMoveWindow(#img, int(round(X*Window_W)), int(round(Y*Window_H))) ;} cv::imshow(#img, img);
+#define SUPERPIXEL_ALGORITHM 	"SLIC"
 using namespace std;
 using namespace cv;
 
@@ -32,14 +33,27 @@ Egbis egbis;
 void compareHistograms(int base_sp_id, int test1_sp_id, int test2_sp_id)
 {
 	printf("Superpixels histogram comparison. Methods: 1) Correlation, 2) Chi-Square, 3) Intersection, and 4) Bhattacharyya distance\n");
+
+	vector<Superpixel> superpixels_list;
+	if(SUPERPIXEL_ALGORITHM == "EGBIS")
+	{
+		superpixels_list = egbis.get_superpixels();
+	}
+	else
+	{
+		superpixels_list = slic.get_superpixels();	
+	}
+
 	for( int i = 0; i < 4; i++ )
     {
-	    int compare_method = i;
-		vector<Superpixel> superpixels_list = slic.get_superpixels();
-		double base_base = compareHist( superpixels_list[base_sp_id].get_histogram(), superpixels_list[base_sp_id].get_histogram(), compare_method );
-	    double base_test1 = compareHist( superpixels_list[base_sp_id].get_histogram(), superpixels_list[test1_sp_id].get_histogram(), compare_method );
-	    double base_test2 = compareHist( superpixels_list[base_sp_id].get_histogram(), superpixels_list[test2_sp_id].get_histogram(), compare_method );
-	    printf( " Method [%d]: Superpixel %i against itself, Superpixels %i and %i, Superpixels %i and %i : %f,   %f,   %f \n", i, base_sp_id, base_sp_id, test1_sp_id, base_sp_id, test2_sp_id, base_base, base_test1, base_test2 );
+		if((superpixels_list.size() >= base_sp_id) && (superpixels_list.size() >= test1_sp_id) && (superpixels_list.size() >= test2_sp_id))
+		{
+			int compare_method = i;
+			double base_base = compareHist( superpixels_list[base_sp_id].get_histogram(), superpixels_list[base_sp_id].get_histogram(), compare_method );
+		    double base_test1 = compareHist( superpixels_list[base_sp_id].get_histogram(), superpixels_list[test1_sp_id].get_histogram(), compare_method );
+		    double base_test2 = compareHist( superpixels_list[base_sp_id].get_histogram(), superpixels_list[test2_sp_id].get_histogram(), compare_method );
+		    printf( " Method [%d]: Superpixel %i against itself, Superpixels %i and %i, Superpixels %i and %i : %f,   %f,   %f \n", i, base_sp_id, base_sp_id, test1_sp_id, base_sp_id, test2_sp_id, base_base, base_test1, base_test2 );
+		}
 	}
 
 }
@@ -90,6 +104,7 @@ void egbisSuperpixels()
     egbis.calculateSuperpixelCenters();
     egbis.storeSuperpixelsMemory();
     superpixels_contours_img = egbis.displayCenterGrid(superpixels_contours_img, cv::Scalar(0,255,0));
+    //superpixels_contours_img = egbis.displayNumberGrid(superpixels_contours_img, cv::Scalar(0,255,0));
 }
 
 void cameraSetup()
@@ -144,8 +159,15 @@ int main( int argc, char** argv )
 		cvtColor(frame, gray, CV_BGR2GRAY);
 		waitKey(1); // Wait Time
 		seg_image = frame.clone();
-		//slicSuperpixels();
-		egbisSuperpixels();
+
+		if(SUPERPIXEL_ALGORITHM == "EGBIS")
+		{
+			egbisSuperpixels();
+		}
+		else if(SUPERPIXEL_ALGORITHM == "SLIC")
+		{
+			slicSuperpixels();
+		}
 		CV_TIMER_STOP(B, "Superpixels processed")
 
 

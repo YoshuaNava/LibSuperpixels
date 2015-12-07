@@ -1,1 +1,0 @@
-/usr/lib/ccache/c++  -fPIC  -std=c++11 -mmmx -msse -msse -msse2 -msse3 -mssse3 -O3 -DNDEBUG   -shared -Wl,-soname,libegbis.so -o libegbis.so CMakeFiles/egbis.dir/include/egbis/egbis.cpp.o 

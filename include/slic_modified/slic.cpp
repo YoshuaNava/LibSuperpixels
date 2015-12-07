@@ -464,13 +464,11 @@ void Slic::store_superpixels(IplImage *image)
 void Slic::display_number_grid(IplImage *image, CvScalar colour) 
 {
     for (int i = 0; i < (int) superpixels.size(); i++) {
-        //cvCircle(image, cvPoint(superpixels[i][0], superpixels[i][0]), 2, colour, 2);
         char buffer[25];
         sprintf(buffer, "%i", i);
         CvFont font;
         cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 0.3, 0.3);
         cvPutText(image, buffer, cvPoint(superpixels[i].get_center().x, superpixels[i].get_center().y), &font, colour);
-        //cout << "Superpixel # " << i << ".  Number of points = " << superpixels[i].get_points().size() << ".    Histogram length = " << superpixels[i].get_histogram().size() << "\n";
     }
 }
 

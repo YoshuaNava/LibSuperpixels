@@ -51,6 +51,7 @@
 		vector<Superpixel> storeSuperpixelsMemory();
 		cv::Mat displayCenterGrid(cv::Mat image, CvScalar colour);
 		cv::Mat displayNumberGrid(cv::Mat image, CvScalar colour);
+		vector<Superpixel> get_superpixels();
  };
 
 

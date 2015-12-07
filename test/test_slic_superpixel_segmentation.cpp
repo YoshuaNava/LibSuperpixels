@@ -112,7 +112,7 @@ int main( int argc, char** argv )
 			std::cout << "Unable to retrieve frame from video stream." << std::endl;
 			continue;
 		}
-
+		printf("#######################################\n");
 		CV_TIMER_STOP(A, "Received image from camera")
 		cv:resize(frame, frame, Size(proc_W, proc_H), 0, 0, INTER_AREA);
 		cvtColor(frame, gray, CV_BGR2GRAY);
@@ -124,6 +124,7 @@ int main( int argc, char** argv )
 		showImages();
 
 		CV_TIMER_STOP(Z, "Loop finished")
+		printf("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
 	 	char key_stroke = waitKey(3);
 	}
 

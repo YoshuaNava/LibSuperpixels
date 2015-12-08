@@ -22,7 +22,7 @@ make
 
 ```./test_egbis_superpixel_segmentation ```
 
-**4)** To run the EGBIS superpixel segmentation test, type:
+**4)** To run the SLIC superpixel segmentation test, type:
 
 ```./test_slic_superpixel_segmentation ```
 

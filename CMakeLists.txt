@@ -27,7 +27,7 @@ ADD_LIBRARY(slic SHARED
 )
 TARGET_LINK_LIBRARIES(slic libsuperpixel)
 
-ADD_LIBRARY(fh_egbis SHARED 
+ADD_LIBRARY(egbis SHARED 
 	include/egbis/convolve.h
 	include/egbis/disjoint-set.h
 	include/egbis/filter.h
@@ -40,12 +40,12 @@ ADD_LIBRARY(fh_egbis SHARED
 	include/egbis/egbis.h
 	include/egbis/egbis.cpp
 )
-TARGET_LINK_LIBRARIES(fh_egbis libsuperpixel)
+TARGET_LINK_LIBRARIES(egbis libsuperpixel)
 
 
 ADD_EXECUTABLE(test_egbis_superpixel_segmentation test/test_egbis_superpixel_segmentation.cpp)
 TARGET_LINK_LIBRARIES(test_egbis_superpixel_segmentation ${LINK_LIBS})
-TARGET_LINK_LIBRARIES(test_egbis_superpixel_segmentation fh_egbis)
+TARGET_LINK_LIBRARIES(test_egbis_superpixel_segmentation egbis)
 
 ADD_EXECUTABLE(test_slic_superpixel_segmentation test/test_slic_superpixel_segmentation.cpp)
 TARGET_LINK_LIBRARIES(test_slic_superpixel_segmentation ${LINK_LIBS})
@@ -54,7 +54,7 @@ TARGET_LINK_LIBRARIES(test_slic_superpixel_segmentation slic)
 ADD_EXECUTABLE(test_histogram_superpixel_comparison test/test_histogram_superpixel_comparison.cpp)
 TARGET_LINK_LIBRARIES(test_histogram_superpixel_comparison ${LINK_LIBS})
 TARGET_LINK_LIBRARIES(test_histogram_superpixel_comparison slic)
-TARGET_LINK_LIBRARIES(test_histogram_superpixel_comparison fh_egbis)
+TARGET_LINK_LIBRARIES(test_histogram_superpixel_comparison egbis)
 
 
 

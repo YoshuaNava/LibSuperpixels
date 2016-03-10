@@ -67,3 +67,5 @@ Develop an abstract class to encapsulate superpixel segmentations algorithm with
 Make everything compliant with the ROS C++ Style Guide ( http://wiki.ros.org/CppStyleGuide )
 
 Improve the performance of the SLIC algorithm, using intrinsics and Intel TBB.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/YoshuaNava/libsuperpixels/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
